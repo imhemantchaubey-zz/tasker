@@ -1,6 +1,1 @@
-<div *ngFor="let task of tasks">
-  <div>{{ task.text }}</div>
-  <div>{{ task.day }}</div>
-  <div>{{ task.reminder }}</div>
-  <br />
-</div>
+<app-task-item *ngFor="let task of tasks" [taskitem]="task"> </app-task-item>
