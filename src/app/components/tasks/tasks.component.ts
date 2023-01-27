@@ -17,6 +17,10 @@ export class TasksComponent {
   }
 
   deleteTask(task: Task) {
-    console.log(task);
+    this.taskService
+      .deleteTask(task)
+      .subscribe(
+        () => (this.tasks = this.tasks.filter((t) => t.id !== task.id))
+      );
   }
 }
