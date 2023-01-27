@@ -9,10 +9,10 @@ import { Task } from '../../Task';
 })
 export class TaskItemComponent {
   @Input() taskItem!: Task;
-  @Output() btnClick = new EventEmitter();
+  @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
   faTimes = faTimes;
 
-  onClick() {
-    this.btnClick.emit();
+  onDelete() {
+    this.onDeleteTask.emit();
   }
 }

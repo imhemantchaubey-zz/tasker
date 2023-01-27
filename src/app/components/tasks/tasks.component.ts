@@ -16,7 +16,7 @@ export class TasksComponent {
     this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
   }
 
-  onDelete(task: Task) {
+  deleteTask(task: Task) {
     console.log(task);
   }
 }
