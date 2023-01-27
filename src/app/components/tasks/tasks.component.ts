@@ -15,4 +15,8 @@ export class TasksComponent {
   ngOnInit(): void {
     this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
   }
+
+  onDelete(task: Task) {
+    console.log(task);
+  }
 }
