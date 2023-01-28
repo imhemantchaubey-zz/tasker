@@ -25,6 +25,9 @@ export class TasksComponent {
   }
 
   toggleReminder(task: Task) {
-    console.log('task.reminder');
+    task.reminder = !task.reminder;
+    console.log(task);
+    this.taskService.updateTaskReminder(task).subscribe();
+    console.log(task);
   }
 }
