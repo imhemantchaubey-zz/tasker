@@ -30,4 +30,9 @@ export class TaskService {
     const url = `http://localhost:5000/update/${task._id}`;
     return this.http.post<Task>(url, task, httpOptions);
   }
+
+  addTask(task: Task): Observable<Task> {
+    const url = `http://localhost:5000/record/add`;
+    return this.http.post<Task>(url, task, httpOptions);
+  }
 }

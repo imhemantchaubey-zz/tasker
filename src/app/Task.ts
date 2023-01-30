@@ -1,5 +1,7 @@
+import { ObjectId } from 'mongodb';
+
 export interface Task {
-  _id: number;
+  _id: ObjectId;
   text: string;
   day: string;
   reminder: boolean;
