@@ -24,6 +24,10 @@ export class AddTaskComponent {
   }
 
   onSubmit() {
+    if (!this.text) {
+      alert('NoTaskError: Please add a task!');
+      return;
+    }
     const newTask = {
       text: this.text,
       day: this.day,
