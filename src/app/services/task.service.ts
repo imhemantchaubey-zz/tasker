@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root',
 })
 export class TaskService {
-  private apiUrl = 'http://localhost:5000/record';
+  private apiUrl = 'https://imhemantchaubey-tasker-backend.glitch.me/record';
 
   constructor(private http: HttpClient) {}
 
@@ -22,17 +22,17 @@ export class TaskService {
   }
 
   deleteTask(task: Task): Observable<Task> {
-    const url = `http://localhost:5000/delete/${task._id}`;
+    const url = `https://imhemantchaubey-tasker-backend.glitch.me/delete/${task._id}`;
     return this.http.delete<Task>(url);
   }
 
   updateTaskReminder(task: Task): Observable<Task> {
-    const url = `http://localhost:5000/update/${task._id}`;
+    const url = `https://imhemantchaubey-tasker-backend.glitch.me/update/${task._id}`;
     return this.http.post<Task>(url, task, httpOptions);
   }
 
   addTask(task: Task): Observable<Task> {
-    const url = `http://localhost:5000/record/add`;
+    const url = `https://imhemantchaubey-tasker-backend.glitch.me/record/add`;
     return this.http.post<Task>(url, task, httpOptions);
   }
 }
