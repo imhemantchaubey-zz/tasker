@@ -2,4 +2,18 @@
   <p>Copyright &copy; 2023</p>
   <a *ngIf="hasRoute('/')" routerLink="/about">About</a>
   <a *ngIf="hasRoute('/about')" routerLink="/">Home</a>
+  <div class="socials">
+    <a href="#">
+      <fa-icon [icon]="faFacebook" [ngStyle]="{ color: 'blue' }"></fa-icon>
+    </a>
+    <a href="#">
+      <fa-icon [icon]="faTwitter" [ngStyle]="{ color: 'blue' }"></fa-icon>
+    </a>
+    <a href="#">
+      <fa-icon [icon]="faInstagram" [ngStyle]="{ color: 'blue' }"></fa-icon>
+    </a>
+    <a href="#">
+      <fa-icon [icon]="faLinkedin" [ngStyle]="{ color: 'blue' }"></fa-icon>
+    </a>
+  </div>
 </footer>

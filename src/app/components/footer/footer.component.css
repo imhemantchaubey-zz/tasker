@@ -3,3 +3,19 @@ footer {
   text-align: center;
   align-items: center;
 }
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+}
+
+.socials a {
+  color: #333;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  color: #007bff;
+}
