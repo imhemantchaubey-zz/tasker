@@ -1,7 +1,6 @@
 <footer>
-  <p>Copyright &copy; 2023</p>
-  <a *ngIf="hasRoute('/')" routerLink="/about">About</a>
-  <a *ngIf="hasRoute('/about')" routerLink="/">Home</a>
+  <a class="btn" *ngIf="hasRoute('/')" routerLink="/about">About</a>
+  <a class="btn" *ngIf="hasRoute('/about')" routerLink="/">Home</a>
   <div class="social-box">
     <div class="socials">
       <a href="#">
@@ -18,4 +17,5 @@
       </a>
     </div>
   </div>
+  <p>Copyright &copy; 2023</p>
 </footer>
