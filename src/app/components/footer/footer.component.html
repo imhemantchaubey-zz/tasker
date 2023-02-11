@@ -1,6 +1,18 @@
 <footer>
-  <a class="btn" *ngIf="hasRoute('/')" routerLink="/about">About</a>
-  <a class="btn" *ngIf="hasRoute('/about')" routerLink="/">Home</a>
+  <a
+    class="footer-btn"
+    title="Click here to go to the about page"
+    *ngIf="hasRoute('/')"
+    routerLink="/about"
+    >About</a
+  >
+  <a
+    class="footer-btn"
+    title="Click here to go to the home page"
+    *ngIf="hasRoute('/about')"
+    routerLink="/"
+    >Home</a
+  >
   <div class="social-box">
     <div class="socials">
       <a href="#">
