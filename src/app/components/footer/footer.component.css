@@ -23,9 +23,10 @@ footer {
   height: 32px;
   font-size: 24px;
   margin: 6px;
+  transition: transform 0.2s ease-in;
 }
 
 .socials a:hover {
-  border-radius: 48px;
   cursor: pointer;
+  transform: scale(1.2);
 }
