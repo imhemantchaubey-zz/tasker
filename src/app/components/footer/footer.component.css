@@ -4,18 +4,29 @@ footer {
   align-items: center;
 }
 
+.box {
+  justify-content: center;
+  align-content: center;
+}
+
 .socials {
+  width: 120px;
   display: flex;
   justify-content: space-between;
-  width: 60px;
+  flex-direction: row;
+  align-items: center;
 }
 
 .socials a {
-  color: #333;
-  font-size: 20px;
-  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  margin: 8px;
+  padding: 8px;
 }
 
 .socials a:hover {
-  color: #007bff;
+  background-color: whitesmoke;
+  border-radius: 48px;
+  cursor: pointer;
 }
