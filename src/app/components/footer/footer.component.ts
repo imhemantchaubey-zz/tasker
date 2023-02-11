@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import {
-  faFacebook,
+  faGithub,
   faTwitter,
   faInstagram,
   faLinkedin,
@@ -13,7 +13,7 @@ import {
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent {
-  faFacebook = faFacebook;
+  faGithub = faGithub;
   faTwitter = faTwitter;
   faInstagram = faInstagram;
   faLinkedin = faLinkedin;
